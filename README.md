@@ -14,7 +14,11 @@
 ## Komma igång
 
 ### Git
-- Git ....
+- Öppna terminalen
+- Navigera dig till den path du vill klona projektet i
+- Skriv: `git clone https://github.com/MMR-Solutions-AB/Tic-Tac-Toe.git`
+- Skapa ett repository på GitHub och länka Git till den
+- Boka en tid med en handledare om du behöver hjälp med detta
 
 ### Referensbilder & material
 
