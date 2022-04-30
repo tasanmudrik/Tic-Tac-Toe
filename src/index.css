@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-black-dark: #1a2a33;
+    --color-black-light: #1f3641;
+    --color-grey-dark: #a8bfc9;
+    --color-grey-light: #dbe8ed;
+    --color-blue-dark: #31c3bd;
+    --color-blue-light: #65e9e4;
+    --color-yellow-dark: #f2b137;
+    --color-yellow-light: #ffc860;
+}
+
+body {
+    background-color: var(--color-black-dark);
+    color: var(--color-grey-light);
+}
+.App {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container {
+    max-width: 450px;
+    width: 100vw;
+    margin-inline: auto;
+    padding: 30px 16px;
+}
+
+/* New game*/
+.start {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.start-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-shadows {
+    background-color: var(--color-black-light);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.start-player {
+    width: 100%;
+    background-color: var(--color-black-dark);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.start-player span {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start-player--active {
+    background-color: rgb(94, 90, 90);
+    box-shadow: 0 0 8px rgba(44, 44, 41, 0.2);
+}
+.start-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.button {
+    background-color: var(--color-grey-light);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: var(--color-black-light);
+}
+.button-cpu {
+    background-color: var(--color-yellow-light);
+}
+.button-player {
+    background-color: var(--color-blue-light);
+}
+
+/* Board*/
+.board {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.board-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.board-turn {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-black-light);
+    padding: 6px 12px;
+    border-radius: 5px;
+}

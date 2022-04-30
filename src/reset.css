@@ -1,0 +1,20 @@
+/* Board*/
+.board {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.board-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.board-turn {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-black-light);
+    padding: 6px 12px;
+    border-radius: 5px;
+}
